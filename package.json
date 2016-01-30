@@ -1,6 +1,6 @@
 {
   "name": "land-or-sea",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A little package telling you if your coordinates are on land or in the middle of the sea.",
   "main": "index.js",
   "dependencies": {
