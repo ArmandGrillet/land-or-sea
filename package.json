@@ -1,13 +1,13 @@
 {
   "name": "land-or-sea",
-  "version": "1.0.2",
-  "description": "A little package telling you if your coordinates are on land or in the middle of the sea.",
+  "version": "1.0.4",
+  "description": "Tells if some coordinates are on land or in the middle of the sea.",
   "main": "index.js",
   "dependencies": {
     "request": "latest"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "nodeunit tests.js"
   },
   "repository": {
     "type": "git",
@@ -25,7 +25,7 @@
   "bugs": {
     "url": "https://github.com/ArmandGrillet/land-or-sea/issues"
   },
-  "homepage": "https://github.com/ArmandGrillet/land-or-sea#readme",
+  "homepage": "https://github.com/ArmandGrillet/land-or-sea",
   "devDependencies": {
     "nodeunit": "^0.9.1"
   }

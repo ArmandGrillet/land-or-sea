@@ -1,6 +1,6 @@
 # land-or-sea
 
-A little module telling you if a location is on land or on sea.
+Tells if your coordinates are on land or in the middle of the sea.
 
 ## How to use it?
 
@@ -16,12 +16,14 @@ Use it:
 var los = require('land-or-sea');
 
 var regexFromRule = los.checkForCoordinates(40.440625, -79.995886, function(field, error) {
-    if (error === null) {
+    if (!error) {
         if (field === 'land') {
             console.log('Location is on land');
         } else {
             console.log('Location is on sea');
         }
+    } else {
+        console.log(error.message);
     }
 });
 
